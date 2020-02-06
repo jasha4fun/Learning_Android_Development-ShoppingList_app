@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ShopEditActivity"
+    tools:showIn="@layout/activity_shop_edit">
+
+    <EditText
+        android:id="@+id/edit_shop_name"
+        style="@style/EditTextDefault"
+        android:hint="@string/shop_edit_hint_name"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_shop_description"
+        style="@style/EditTextDefault"
+        android:hint="@string/shop_edit_hint_description"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintTop_toBottomOf="@id/edit_shop_name"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_shop_url"
+        style="@style/EditTextDefault"
+        android:hint="@string/shop_edit_hint_url"
+        android:inputType="textUri"
+        app:layout_constraintTop_toBottomOf="@id/edit_shop_description"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_shop_latitude"
+        style="@style/EditTextDefault"
+        android:hint="@string/shop_edit_hint_latitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/edit_shop_url"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_shop_longitude"
+        style="@style/EditTextDefault"
+        android:hint="@string/shop_edit_hint_longitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/edit_shop_latitude"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_shop_radius"
+        style="@style/EditTextDefault"
+        android:hint="@string/shop_edit_hint_radius"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/edit_shop_longitude"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/edit_shop_layout_edit_buttons">
+
+        <Button
+            android:id="@+id/edit_shop_btn_find_nearest"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_design"
+            android:text="@string/btn_find_nearest" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/edit_shop_layout_edit_buttons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/edit_shop_btn_delete"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_design"
+            android:text="@string/btn_Delete" />
+
+        <Button
+            android:id="@+id/edit_shop_btn_cancel"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_design"
+            android:text="@string/btn_Cancel" />
+
+        <Button
+            android:id="@+id/edit_shop_btn_save"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_design"
+            android:text="@string/btn_Save" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
