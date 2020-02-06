@@ -6,6 +6,55 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="ActivityDefault">
+            <item name="android:background">@color/colorPrimaryDark</item>
+        </style>
+
+        <style name="ButtonDefault">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_margin">@dimen/btn_default_margin</item>
+        </style>
+
+        <style name="ButtonSave" parent="ButtonDefault">
+            <item name="android:background">@color/buttonOk</item>
+        </style>
+
+        <style name="ButtonDelete" parent="ButtonDefault">
+            <item name="android:background">@color/buttonDelete</item>
+        </style>
+
+        <style name="ButtonMain" parent="ButtonDefault">
+            <item name="android:background">@color/colorAccent</item>
+            <item name="android:textColor">@android:color/primary_text_dark</item>
+            <item name="android:layout_margin">8dp</item>
+        </style>
+
+        <style name="ButtonFab">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_gravity">bottom|end</item>
+            <item name="android:layout_margin">16dp</item>
+        </style>
+
+        <style name="EditTextDefault">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_margin">@dimen/editText_default_margin</item>
+            <item name="android:padding">@dimen/editText_default_padding</item>
+            <item name="android:background">@color/grey_100</item>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     </style>
+    
+    <style name="Theme.AppCompat.Light"></style>
 
 </resources>
