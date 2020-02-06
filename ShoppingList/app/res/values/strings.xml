@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Shopping List</string>
+    
+    <string name="app_permission_broadcast">com.example.shoppinglist.permission.BROADCAST</string>
+    <string name="firebase_ref_shops">Shops</string>
+    <string name="title_activity_shop_list">Shops</string>
+
+    <string name="btn_showShopsList">Shops</string>
+    <string name="shop_edit_hint_url">Url</string>
+    <string name="shop_list_radius_label">Radius:</string>
+
+    <string name="shop_edit_hint_name">Shop Name</string>
+    <string name="shop_edit_hint_description">Description</string>
+    <string name="shop_edit_hint_latitude">Latitude</string>
+    <string name="shop_edit_hint_longitude">Longitude</string>
+    <string name="shop_edit_hint_radius">Radius</string>
+
+    <string name="btn_Save">Save</string>
+    <string name="btn_Cancel">Cancel</string>
+    <string name="btn_Delete">Delete</string>
+    <string name="btn_find_nearest">Find Nearest</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_shop_map">Shops Map</string>
+    <string name="btn_showShopsMap">Shops Map</string>
+    
 </resources>
